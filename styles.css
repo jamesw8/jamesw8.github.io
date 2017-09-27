@@ -51,6 +51,12 @@ body {
 	z-index: 0;
 }
 
+#links {
+	background-color: #a7f2ad;
+	margin-top: 8%;
+	height: 200px;
+}
+
 #github {
 	opacity: 0;
 	transform: translateY(300%);
@@ -78,11 +84,6 @@ body {
 	height: 80px;
 }
 
-#links {
-	background-color: #a7f2ad;
-	margin-top: 8%;
-	height: 200px;
-}
 
 #octocat {
 	padding-top: 15px;
