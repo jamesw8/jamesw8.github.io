@@ -11,21 +11,65 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.5em;
 }
-
-.container {
+body {
 	background-color: lightgray;
-	box-shadow: 3px 0 5px gray, -3px 0 5px gray;
+}
+
+@keyframes blink {
+	0% {opacity:1;}
+	80% {opacity:0;}
+	100% {opacity:1;}
+}
+
+@keyframes slideFromLeft {
+	0% {transform: translateX(-100%);}
+	100% {transform: translateX(0);}
+}
+
+#blink {
+	opacity: 0;
+	animation: blink 1.25s infinite 1.50s;
+}
+#body {
+	background-color: #F8F8F8;
+	box-shadow: 3px 3px 5px gray, -3px 3px 5px gray;
+	padding-top: 70px; 
 	width: 90%;
+	height: 100vh;
 	z-index: 0;
 }
 
-#navbar {
-	background-color: #62b75d;
+#greet {
+	animation: slideFromLeft 1.10s cubic-bezier(.46,.88,.51,.96);
+}
+
+.nav {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: #5cce78;
+}
+
+.navbar {
+	background-color: #4b965d;
 	box-shadow: 0 3px 5px gray;
 	display: block;
-	height: 10vh;
-	position: sticky;
-	top: 0;
-	width: 100vw;
 	z-index: 99;
+}
+
+.navbar-brand {
+	color: white;
+	font-family: 'Merriweather', serif;
+}
+.navbar-right {
+	margin-right: ;
+}
+
+.navbar-right a {
+	color: white;
+	font-family: 'Open Sans', sans-serif;
 }
