@@ -21,26 +21,85 @@ body {
 	100% {opacity:1;}
 }
 
+@keyframes slideFromBottom {
+	0% {
+		opacity: 0;
+		transform: translateY(200%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
 @keyframes slideFromLeft {
 	0% {transform: translateX(-100%);}
-	100% {transform: translateX(0);}
+	100% {transform: translateX(0%);}
 }
 
 #blink {
 	opacity: 0;
 	animation: blink 1.25s infinite 1.50s;
 }
+
 #body {
 	background-color: #F8F8F8;
 	box-shadow: 3px 3px 5px gray, -3px 3px 5px gray;
-	padding-top: 70px; 
+	padding-top: 100px; 
 	width: 90%;
-	height: 100vh;
+	height: 150vh;
 	z-index: 0;
+}
+
+#github {
+	opacity: 0;
+	transform: translateY(300%);
+	animation: slideFromBottom 1.00s ease-out 1.00s forwards;
+}
+
+#github-logo {
+	height: 60px;
 }
 
 #greet {
 	animation: slideFromLeft 1.10s cubic-bezier(.46,.88,.51,.96);
+}
+
+#linkedin {
+	opacity: 0;
+	transform: translateY(300%);
+	height: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	animation: slideFromBottom 1.00s ease-out 1.00s forwards;
+}
+
+#linkedin-logo {
+	height: 80px;
+}
+
+#links {
+	background-color: #a7f2ad;
+	margin-top: 8%;
+	height: 200px;
+}
+
+#octocat {
+	padding-top: 15px;
+	height: 100px;
+}
+
+#resume {
+	opacity: 0;
+	transform: translateY(300%);
+	animation: slideFromBottom 1.00s ease-out 1.00s forwards;
+}
+#resume a {
+	color: #1d4991;
+	display: block;
+	font-size: 110px;
+	text-align: center;
+	text-decoration: none;
 }
 
 .nav {
@@ -55,6 +114,7 @@ body {
 }
 
 .navbar {
+	opacity:1;
 	background-color: #4b965d;
 	box-shadow: 0 3px 5px gray;
 	display: block;
@@ -73,3 +133,21 @@ body {
 	color: white;
 	font-family: 'Open Sans', sans-serif;
 }
+
+@media (max-width: 767px) {
+	#body {
+		padding-top: 200px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	#resume {
+		padding-top: 15px;
+	}
+
+	#greeting {
+		padding-left: 9%;
+	}
+
+}
+

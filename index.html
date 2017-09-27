@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Icons -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<!-- Latest compiled and minified JavaScript -->
@@ -27,8 +29,28 @@
 		</nav>
 
 		<div class="container-fluid" id="body">
-			<div class="col-md-6">
-				<p id="greet">Hi I'm James, an aspiring Web Developer.<span id="blink">|</span> </p>
+			<div class="row">
+				<div class="col-sm-12 col-md-6 col-sm-push-1 col-md-push-1">
+					<p id="greet">Hi I'm James, an aspiring Web Developer.<span id="blink">|</span></p>
+				</div>
+			</div>
+			<div class="row" id="links">
+				<div class="col-xs-12 col-sm-4 col-md-4" id="github">
+					<a class="link" href="https://github.com/jamesw8">
+						<img class="img-responsive center-block" id="octocat" src="assets/Octocat.png" />
+						<img class="img-responsive center-block" id="github-logo" src="assets/GitHub_Logo.png" />
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4" id="linkedin" style="background-color:#6ac471;" >
+					<a class="link" href="https://linkedin.com/in/jamesw8">
+						<img class="img-responsive center-block" id="linkedin-logo" src="assets/Logo-2C-128px-TM.png" />
+					</a>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4" id="resume">
+					<a href="docs/JamesWong-Resume.pdf">
+						<i class="fa fa-file-text-o center-block" id="resume-icon"></i>
+					</a>
+				</div>
 			</div>
 		</div>
 	</body>
