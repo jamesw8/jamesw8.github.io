@@ -6,10 +6,17 @@ body {
 h1 {
 	font-family: 'Merriweather', serif;
 }
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+}
+
 .container {
 	background-color: lightgray;
 	box-shadow: 3px 0 5px gray, -3px 0 5px gray;
 	width: 90%;
+	z-index: 0;
 }
 
 #navbar {
