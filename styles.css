@@ -12,7 +12,7 @@ p {
 	font-size: 1.5em;
 }
 body {
-	background-color: lightgray;
+	background-color: #414f43;
 }
 
 @keyframes blink {
@@ -43,7 +43,7 @@ body {
 }
 
 #body {
-	background-color: #F8F8F8;
+	background-color: #d7efdb; /*#F8F8F8*/
 	box-shadow: 3px 3px 5px gray, -3px 3px 5px gray;
 	padding-top: 100px; 
 	width: 90%;
@@ -60,7 +60,7 @@ body {
 	height: 100%;
 	transform: translateY(300%);
 	animation: slideFromBottom 1.00s ease-out 1.00s forwards;
-	z-index: 1
+	z-index: 1;
 }
 
 #github-logo {
@@ -102,6 +102,8 @@ body {
 }
 
 #links {
+	border-top: 2px dashed #77af7d;
+	border-bottom: 2px dashed #77af7d;
 	margin-top: 8%;
 	height: 200px;
 }
@@ -125,6 +127,11 @@ body {
 	padding: 0;
 }
 
+#links > div > div:hover {
+	transition: background-color 0.5s ease-out;
+	background-color: #d5f2d8;
+}
+
 .nav {
 	height: 100%;
 	padding: 0;
@@ -133,7 +140,8 @@ body {
 
 .nav > li > a:hover,
 .nav > li > a:focus {
-  background-color: #5cce78;
+	transition: background-color 0.5s ease-out;
+  	background-color: #5cce78;
 }
 
 .navbar {
@@ -148,6 +156,7 @@ body {
 	color: white;
 	font-family: 'Merriweather', serif;
 }
+
 .navbar-right {
 	margin-right: ;
 }
@@ -164,6 +173,15 @@ body {
 
 	#resume {
 		padding-top: 15px;
+	}
+
+	#mid-col {
+		border-top: 2px dashed #95db9c;
+		border-bottom: 2px dashed #95db9c;
+	}
+
+	#right-col {
+		border-bottom: 2px dashed #77af7d;
 	}
 
 	#greeting {
