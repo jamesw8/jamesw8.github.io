@@ -51,26 +51,30 @@ body {
 	z-index: 0;
 }
 
+#greet {
+	animation: slideFromLeft 1.10s cubic-bezier(.46,.88,.51,.96);
+}
+
 #github {
 	opacity: 0;
+	height: 100%;
 	transform: translateY(300%);
 	animation: slideFromBottom 1.00s ease-out 1.00s forwards;
+	z-index: 1
 }
 
 #github-logo {
 	height: 60px;
 }
 
-#greet {
-	animation: slideFromLeft 1.10s cubic-bezier(.46,.88,.51,.96);
-}
+
 
 #linkedin {
 	opacity: 0;
-	transform: translateY(300%);
 	height: 100%;
-	padding-top: 30px;
+	padding-top: 40px;
 	padding-bottom: 30px;
+	transform: translateY(300%);
 	animation: slideFromBottom 1.00s ease-out 1.00s forwards;
 }
 
@@ -78,18 +82,13 @@ body {
 	height: 80px;
 }
 
-#links {
-	background-color: #a7f2ad;
-	margin-top: 8%;
-	height: 200px;
-}
-
-#octocat {
+#octocat-logo {
 	padding-top: 15px;
 	height: 100px;
 }
 
 #resume {
+	height: 100%;
 	opacity: 0;
 	transform: translateY(300%);
 	animation: slideFromBottom 1.00s ease-out 1.00s forwards;
@@ -100,6 +99,30 @@ body {
 	font-size: 110px;
 	text-align: center;
 	text-decoration: none;
+}
+
+#links {
+	margin-top: 8%;
+	height: 200px;
+}
+
+#left-col {
+	background-color: #a7f2ad;
+	height: 100%;
+	padding: 0;
+}
+
+#mid-col {
+	background-color: #6ac471;
+	height: 100%;
+	padding: 0;
+	z-index: 2;
+}
+
+#right-col {
+	background-color: #a7f2ad;
+	height: 100%;
+	padding: 0;
 }
 
 .nav {
@@ -137,8 +160,6 @@ body {
 @media (max-width: 767px) {
 	#body {
 		padding-top: 200px;
-		padding-left: 0px;
-		padding-right: 0px;
 	}
 
 	#resume {
