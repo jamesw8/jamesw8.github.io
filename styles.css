@@ -1,0 +1,24 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Merriweather', serif;
+}
+.container {
+	background-color: lightgray;
+	box-shadow: 3px 0 5px gray, -3px 0 5px gray;
+	width: 90%;
+}
+
+#navbar {
+	background-color: #62b75d;
+	box-shadow: 0 3px 5px gray;
+	display: block;
+	height: 10vh;
+	position: sticky;
+	top: 0;
+	width: 100vw;
+	z-index: 99;
+}
