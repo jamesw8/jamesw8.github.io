@@ -1,6 +1,7 @@
-body {
+body, html {
 	padding: 0;
 	margin: 0;
+	height: 100%;
 }
 
 h1 {
@@ -48,8 +49,7 @@ body {
 	box-shadow: 2px 2px 20px black, -2px 2px 20px black;
 	padding-top: 100px; 
 	width: 90%;
-	height: 150vh;
-	z-index: 0;
+	height: 300%;
 }
 
 #greet {
@@ -57,11 +57,12 @@ body {
 }
 
 #github {
+	position: relative;
 	opacity: 0;
 	height: 100%;
 	transform: translateY(300%);
 	animation: slideFromBottom 1.00s ease-out 1.00s forwards;
-	z-index: 1;
+	z-index: 3;
 }
 
 #octocat-logo {
@@ -88,6 +89,7 @@ body {
 	position: relative;
 	top: 40px;
 	height: 100px;
+	z-index: 0;
 }
 
 
@@ -114,10 +116,12 @@ body {
 }
 
 #links {
+	position: absolute;
+	width: 90%;
+	height: 400px;
+	bottom: 0;
 	border-top: 2px dashed #77af7d;
 	border-bottom: 2px dashed #77af7d;
-	margin-top: 8%;
-	height: 300px;
 }
 
 #left-col {
@@ -130,7 +134,7 @@ body {
 	background-color: #6ac471;
 	height: 100%;
 	padding: 0;
-	z-index: 2;
+	z-index: 3;
 }
 
 #right-col {
@@ -144,33 +148,100 @@ body {
 	background-color: #d5f2d8;
 }
 
+#projects {
+	width: 100%;
+	position: absolute;
+	top: 100%;
+	text-align: center;
+}
+
+#project-button {
+	background-color: lightgray;
+	margin: 0;
+	padding: 0;
+	width: 90%;
+	height: 70px;
+	position: absolute;
+	bottom: 0;
+	left: 5%;
+	z-index: 98;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'Open Sans';
+}
+
 .nav {
-	height: 100%;
 	padding: 0;
 	margin: 0;
 }
 
-.nav > li > a:hover,
-.nav > li > a:focus {
-	transition: background-color 0.5s ease-out;
+
+.affix-top > .container-fluid > .nav > li > a {
+	background-color: #262d27;
+	font-size: 14px;
+	height: 51px;
+	transition: font-size 0.5s ease-out, height 0.5s ease-out;
+}
+
+.affix > .container-fluid > .nav > li > a {
+	background-color: #262d27;
+	font-size: 12px;
+	height: 39px;
+	transition: font-size 0.5s ease-out, height 0.5s ease-out;
+}
+
+.affix-top > .container-fluid > .nav > li > a:hover,
+.affix-top > .container-fluid > .nav > li > a:focus,
+.affix > .container-fluid > .nav > li > a:hover,
+.affix > .container-fluid > .nav > li > a:focus {
+	transition: background-color 0.5s ease-out, height 0.5s ease-out;
   	background-color: #5cce78;
 }
 
+.affix-top {
+	position: absolute;
+	color: black;
+	min-height: 51px;
+	transition: min-height 0.5s ease-out;
+}
+
+.affix {
+	min-height: 40px;
+	transition: min-height 0.5s ease-out;
+}
+
+
 .navbar {
-	opacity:1;
-	background-color: #262d27;/*#4b965d*/
+	height: 5px;
+	width: 100%;
+	background-color: #262d27; /*#4b965d*/
 	box-shadow: 0 2px 10px black;
 	display: block;
 	z-index: 99;
 }
 
-.navbar-brand {
+.affix-top > .container-fluid > .navbar-header > .navbar-brand {
+	position: relative;
+	background-color: #161916;
 	color: white;
-	font-family: 'Merriweather', serif;
+	font-family: 'Quicksand', serif;
+	height: 51px;
+	transition: font-size 0.5s ease-out, height 0.5s ease-out;
 }
 
-.navbar-right {
-	margin-right: ;
+.affix > .container-fluid > .navbar-header > .navbar-brand {
+	position: relative;
+	background-color: #161916;
+	color: white;
+	font-family: 'Quicksand', serif;
+	height: 40px;
+	font-size: 14px;
+	transition: font-size 0.5s ease-out, height 0.5s ease-out;
+}
+
+.affix > .container-fluid > .navbar-header > .navbar-brand:hover,
+.affix-top > .container-fluid > .navbar-header > .navbar-brand:hover {
+	color: green;
 }
 
 .navbar-right a {
@@ -181,24 +252,46 @@ body {
 @media (max-width: 767px) {
 	#body {
 		padding-top: 200px;
+		height: 100vh;
 	}
 
 	#resume {
 		padding-top: 15px;
 	}
 
+	#left-col {
+	}
+
 	#mid-col {
+		box-shadow: 2px 0px 20px black, -2px -2px 20px black;
 		border-top: 2px dashed #95db9c;
 		border-bottom: 2px dashed #95db9c;
 	}
 
 	#right-col {
+		positive: relative;
+		box-shadow: 2px 0px 20px black, -2px 0px 20px black;
 		border-bottom: 2px dashed #77af7d;
+		z-index: 3;
 	}
 
 	#greeting {
 		padding-left: 9%;
 	}
 
+	.affix-top > .container-fluid > .nav > li > a {
+		width: 105vw;
+		margin-left: -5%;
+		display: block;
+	}
+
+	.affix > .container-fluid > .nav > li > a {
+		margin-left: -5%
+		width: 105vw;
+		background-color: #262d27;
+		font-size: 12px;
+		height: 39px;
+		transition: font-size 0.5s ease-out, height 0.5s ease-out;
+	}
 }
 
