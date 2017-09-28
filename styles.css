@@ -149,7 +149,7 @@ body {
 }
 
 #projects {
-	width: 100%;
+	width: 90%;
 	position: absolute;
 	top: 100%;
 	text-align: center;
@@ -280,13 +280,15 @@ body {
 	}
 
 	.affix-top > .container-fluid > .nav > li > a {
-		width: 105vw;
 		margin-left: -5%;
+		padding-left: 5%;
+		width: 105vw;
 		display: block;
 	}
 
 	.affix > .container-fluid > .nav > li > a {
-		margin-left: -5%
+		margin-left: -5%;
+		padding-left: 5%;
 		width: 105vw;
 		background-color: #262d27;
 		font-size: 12px;
@@ -294,4 +296,3 @@ body {
 		transition: font-size 0.5s ease-out, height 0.5s ease-out;
 	}
 }
-
