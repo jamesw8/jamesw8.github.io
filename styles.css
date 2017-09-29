@@ -55,7 +55,6 @@ body {
 }
 
 #greet {
-	border: 1px solid black;
 	width: 83%;
 	animation: slideFromLeft 1.10s cubic-bezier(.46,.88,.51,.96);
 }
