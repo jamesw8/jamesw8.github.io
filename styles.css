@@ -267,11 +267,22 @@ body {
 
 @media (max-width: 767px) {
 	#body {
+		position:relative;
 		padding-top: 200px;
 		height: 100%;
 	}
 
+	#greet-div {
+		border: 1px solid black;
+		position: relative;
+		height: 75%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
 	#greet {
+		border: 1px solid red;
+		margin: auto auto;
+		height: 100%;
 		font-size: 1.25em;
 	}
 	#resume {
@@ -284,6 +295,7 @@ body {
 
 	#links {
 		height: 30%;
+		top: 100%;
 	}
 
 	#project-button {
