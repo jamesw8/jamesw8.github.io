@@ -14,6 +14,7 @@ p {
 }
 
 body {
+	position: relative;
 	background-color: #414f43;
 }
 
@@ -40,6 +41,7 @@ body {
 }
 
 #blink {
+	font-size: 1.25em;
 	opacity: 0;
 	animation: blink 1.25s infinite 1.50s;
 }
@@ -53,6 +55,8 @@ body {
 }
 
 #greet {
+	border: 1px solid black;
+	width: 83%;
 	animation: slideFromLeft 1.10s cubic-bezier(.46,.88,.51,.96);
 }
 
@@ -69,7 +73,7 @@ body {
 	position: relative;
 	top: 10px;
 	padding-top: 15px;
-	height: 190px;
+	height: 50%;
 }
 
 #github-logo {
@@ -87,11 +91,10 @@ body {
 
 #linkedin-logo {
 	position: relative;
-	top: 40px;
-	height: 100px;
+	top: 60px;
+	height: 30%;
 	z-index: 0;
 }
-
 
 #resume {
 	height: 100%;
@@ -103,7 +106,7 @@ body {
 #resume a {
 	color: #1d4991;
 	display: block;
-	font-size: 150px;
+	font-size: 10em;
 	text-align: center;
 	text-decoration: none;
 }
@@ -118,7 +121,7 @@ body {
 #links {
 	position: absolute;
 	width: 90%;
-	height: 400px;
+	height: 50%;
 	bottom: 0;
 	border-top: 2px dashed #77af7d;
 	border-bottom: 2px dashed #77af7d;
@@ -143,6 +146,9 @@ body {
 	padding: 0;
 }
 
+#links > div > div {
+	transition: background-color 0.5s ease-out;
+}
 #links > div > div:hover {
 	transition: background-color 0.5s ease-out;
 	background-color: #d5f2d8;
@@ -156,7 +162,7 @@ body {
 }
 
 #project-button {
-	background-color: lightgray;
+	background-color: #262d27;
 	margin: 0;
 	padding: 0;
 	width: 90%;
@@ -168,13 +174,23 @@ body {
 	text-align: center;
 	font-size: 40px;
 	font-family: 'Open Sans';
+	transition: background-color 0.25s ease-out;
+}
+
+#project-button a {
+	color: white;
+	text-decoration: none;
+}
+
+#project-button:hover {
+	background-color: gray;
+	transition: background-color 0.25s ease-out;
 }
 
 .nav {
 	padding: 0;
 	margin: 0;
 }
-
 
 .affix-top > .container-fluid > .nav > li > a {
 	background-color: #262d27;
@@ -210,7 +226,6 @@ body {
 	transition: min-height 0.5s ease-out;
 }
 
-
 .navbar {
 	height: 5px;
 	width: 100%;
@@ -222,26 +237,27 @@ body {
 
 .affix-top > .container-fluid > .navbar-header > .navbar-brand {
 	position: relative;
-	background-color: #161916;
+	/*background-color: #161916;*/
 	color: white;
 	font-family: 'Quicksand', serif;
 	height: 51px;
-	transition: font-size 0.5s ease-out, height 0.5s ease-out;
+	transition: color 0.25s ease-out, font-size 0.5s ease-out, height 0.5s ease-out;
 }
 
 .affix > .container-fluid > .navbar-header > .navbar-brand {
 	position: relative;
-	background-color: #161916;
+	/*background-color: #161916;*/
 	color: white;
 	font-family: 'Quicksand', serif;
 	height: 40px;
 	font-size: 14px;
-	transition: font-size 0.5s ease-out, height 0.5s ease-out;
+	transition: color 0.25s ease-out, font-size 0.5s ease-out, height 0.5s ease-out;
 }
 
 .affix > .container-fluid > .navbar-header > .navbar-brand:hover,
 .affix-top > .container-fluid > .navbar-header > .navbar-brand:hover {
 	color: green;
+	transition: color: 0.5s ease-out;
 }
 
 .navbar-right a {
@@ -252,11 +268,26 @@ body {
 @media (max-width: 767px) {
 	#body {
 		padding-top: 200px;
-		height: 100vh;
+		height: 100%;
 	}
 
+	#greet {
+		font-size: 1.25em;
+	}
 	#resume {
-		padding-top: 15px;
+		padding-top: 30px;
+	}
+
+	#resume a {
+		font-size: 130px;
+	}
+
+	#links {
+		height: 300px;
+	}
+
+	#project-button {
+		display: none;
 	}
 
 	#left-col {
@@ -269,14 +300,10 @@ body {
 	}
 
 	#right-col {
-		positive: relative;
+		position: relative;
 		box-shadow: 2px 0px 20px black, -2px 0px 20px black;
 		border-bottom: 2px dashed #77af7d;
 		z-index: 3;
-	}
-
-	#greeting {
-		padding-left: 9%;
 	}
 
 	.affix-top > .container-fluid > .nav > li > a {
@@ -296,3 +323,5 @@ body {
 		transition: font-size 0.5s ease-out, height 0.5s ease-out;
 	}
 }
+
+@media (min-width: 768px) and (max-width:)
