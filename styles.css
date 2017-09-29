@@ -92,7 +92,7 @@ body {
 #linkedin-logo {
 	position: relative;
 	top: 60px;
-	height: 30%;
+	height: 25%;
 	z-index: 0;
 }
 
@@ -287,6 +287,13 @@ body {
 
 	#resume a {
 		font-size: 80px;
+	}
+
+	#linkedin-logo {
+		position: relative;
+		top: 50px;
+		height: 40%;
+		z-index: 0;
 	}
 
 	#links {
