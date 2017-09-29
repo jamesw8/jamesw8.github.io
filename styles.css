@@ -235,20 +235,19 @@ body {
 	z-index: 99;
 }
 
+.navbar-brand {
+	font-family: 'Quicksand', serif;
+	color: white;
+}
+
 .affix-top > .container-fluid > .navbar-header > .navbar-brand {
 	position: relative;
-	/*background-color: #161916;*/
-	color: white;
-	font-family: 'Quicksand', serif;
 	height: 51px;
 	transition: color 0.25s ease-out, font-size 0.5s ease-out, height 0.5s ease-out;
 }
 
 .affix > .container-fluid > .navbar-header > .navbar-brand {
 	position: relative;
-	/*background-color: #161916;*/
-	color: white;
-	font-family: 'Quicksand', serif;
 	height: 40px;
 	font-size: 14px;
 	transition: color 0.25s ease-out, font-size 0.5s ease-out, height 0.5s ease-out;
@@ -267,30 +266,27 @@ body {
 
 @media (max-width: 767px) {
 	#body {
-		position:relative;
 		padding-top: 200px;
 		height: 100%;
 	}
 
 	#greet-div {
-		border: 1px solid black;
 		position: relative;
 		height: 75%;
 		top: 50%;
 		transform: translateY(-50%);
 	}
 	#greet {
-		border: 1px solid red;
 		margin: auto auto;
 		height: 100%;
 		font-size: 1.25em;
 	}
 	#resume {
-		padding-top: 30px;
+		padding-top: 20px;
 	}
 
 	#resume a {
-		font-size: 100px;
+		font-size: 80px;
 	}
 
 	#links {
@@ -303,6 +299,7 @@ body {
 	}
 
 	#left-col {
+		box-shadow: 2px 0px 20px black, -2px -2px 20px black;
 	}
 
 	#mid-col {
