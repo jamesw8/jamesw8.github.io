@@ -154,7 +154,9 @@ body {
 }
 
 #projects {
+	background-color: white;
 	width: 90%;
+	height: 100%;
 	position: absolute;
 	top: 100%;
 	text-align: center;
@@ -184,6 +186,15 @@ body {
 #project-button:hover {
 	background-color: gray;
 	transition: background-color 0.25s ease-out;
+}
+
+.project {
+	border: 1px solid black;
+	height: 100%;
+}
+
+.project-row {
+	height: 50%;
 }
 
 .nav {
