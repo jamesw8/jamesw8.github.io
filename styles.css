@@ -54,6 +54,12 @@ body {
 	height: 300%;
 }
 
+#pro-pic {
+	border-width: 5px;
+	border-color: lightgreen;
+	border-radius: 50%;
+	height: 100px;
+}
 #greet {
 	width: 83%;
 	animation: slideFromLeft 1.10s cubic-bezier(.46,.88,.51,.96);
@@ -191,10 +197,12 @@ body {
 .project {
 	border: 1px solid black;
 	height: 100%;
+	/*width: 45%;*/
 }
 
 .project-row {
 	height: 50%;
+	/*width: 100%;*/
 }
 
 .nav {
