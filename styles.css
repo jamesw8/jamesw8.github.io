@@ -55,18 +55,20 @@ body {
 }
 
 #pro-pic {
-	border-width: 5px;
-	border-color: lightgreen;
+	border-width: 0px;
 	border-radius: 50%;
-	height: 20vh
+	height: 25vh;
+	width: 25vh;
 }
 
 #greet {
-	width: 83%;
+	text-align: center;
+	width: 60%;
 	animation: slideFromLeft 1.10s cubic-bezier(.46,.88,.51,.96);
 }
 
 #greet-div {
+	font-size: 0.85em;
 	overflow-y: scroll;
 }
 
