@@ -51,7 +51,7 @@ body {
 	box-shadow: 2px 2px 20px black, -2px 2px 20px black;
 	padding-top: 100px; 
 	width: 90%;
-	height: 300%;
+	height: 200%;
 }
 
 #pro-pic {
@@ -59,11 +59,15 @@ body {
 	border-color: lightgreen;
 	border-radius: 50%;
 	height: 100px;
-	width: 150px;
 }
+
 #greet {
 	width: 83%;
 	animation: slideFromLeft 1.10s cubic-bezier(.46,.88,.51,.96);
+}
+
+#greet-div {
+	overflow-y: scroll;
 }
 
 #github {
@@ -83,7 +87,7 @@ body {
 }
 
 #github-logo {
-	height: 90px;
+	height: 33%;
 }
 
 #linkedin {
@@ -161,12 +165,12 @@ body {
 }
 
 #projects {
-	background-color: white;
 	width: 90%;
 	height: 100%;
 	position: absolute;
 	top: 100%;
 	text-align: center;
+	z-index: 4;
 }
 
 #project-button {
@@ -196,14 +200,17 @@ body {
 }
 
 .project {
-	border: 1px solid black;
-	height: 100%;
-	/*width: 45%;*/
+	margin: 0;
+	height: 50vh;
+}
+
+.project-col {
+	padding: 0;
 }
 
 .project-row {
-	height: 50%;
-	/*width: 100%;*/
+	width: 100%;
+	height: 50vh;
 }
 
 .nav {
@@ -248,7 +255,7 @@ body {
 .navbar {
 	height: 5px;
 	width: 100%;
-	background-color: #262d27; /*#4b965d*/
+	background-color: #262d27;
 	box-shadow: 0 2px 10px black;
 	display: block;
 	z-index: 99;
@@ -283,29 +290,37 @@ body {
 	font-family: 'Open Sans', sans-serif;
 }
 
+@media (min-width: 767px) {
+	.project-row {
+
+	}
+}
+
 @media (max-width: 767px) {
 	#body {
-		padding-top: 200px;
-		height: 100%;
+		height: 405vh;
+	}
+
+	#pro-pic {
+		height: 25vh;
 	}
 
 	#greet-div {
-		position: relative;
-		height: 75%;
-		top: 50%;
-		transform: translateY(-50%);
+		height: 90vh;
+		font-size: 1.5em;
 	}
+
 	#greet {
-		margin: auto auto;
 		height: 100%;
 		font-size: 1.25em;
 	}
+
 	#resume {
 		padding-top: 20px;
 	}
 
 	#resume a {
-		font-size: 80px;
+		font-size: 8em;
 	}
 
 	#linkedin-logo {
@@ -316,8 +331,17 @@ body {
 	}
 
 	#links {
-		height: 30%;
-		top: 100%;
+		position: relative;
+		height: 100vh;
+		width: 90vw;
+	}
+
+	#projects {
+		position: relative;
+		top: 0;
+		width: 90vw;
+		height: 100vh;
+		z-index: 6;
 	}
 
 	#project-button {
@@ -325,35 +349,32 @@ body {
 	}
 
 	#left-col {
-		box-shadow: 2px 0px 20px black, -2px -2px 20px black;
+		position: relative;
+		height: 33vh;
+		box-shadow: 0px -5px 20px -3px black;
 	}
 
 	#mid-col {
-		box-shadow: 2px 0px 20px black, -2px -2px 20px black;
+		position: relative;
+		height: 34vh;
+		box-shadow: 0px -2px 20px black;
 		border-top: 2px dashed #95db9c;
 		border-bottom: 2px dashed #95db9c;
 	}
 
 	#right-col {
 		position: relative;
-		box-shadow: 2px 0px 20px black, -2px 0px 20px black;
+		height: 33vh;
+		box-shadow: 0px -7px 20px -6px black;
 		border-bottom: 2px dashed #77af7d;
 		z-index: 3;
 	}
 
-	.affix-top > .container-fluid > .nav > li > a {
-		margin-left: -5%;
-		padding-left: 5%;
-		width: 105vw;
+	.navbar {
+		position: absolute;
 	}
 
-	.affix > .container-fluid > .nav > li > a {
-		margin-left: -5%;
-		padding-left: 5%;
-		width: 105vw;
-		background-color: #262d27;
-		font-size: 12px;
-		height: 39px;
-		transition: font-size 0.5s ease-out, height 0.5s ease-out;
+	.project {
+		width: 90vw;
 	}
 }
