@@ -49,7 +49,7 @@ body {
 #body {
 	background-color: #d7efdb; /*#F8F8F8*/
 	box-shadow: 2px 2px 20px black, -2px 2px 20px black;
-	padding-top: 100px; 
+	padding-top: 80px; 
 	width: 90%;
 	height: 200%;
 }
@@ -58,7 +58,7 @@ body {
 	border-width: 5px;
 	border-color: lightgreen;
 	border-radius: 50%;
-	height: 100px;
+	height: 20vh
 }
 
 #greet {
@@ -131,7 +131,7 @@ body {
 #links {
 	position: absolute;
 	width: 90%;
-	height: 50%;
+	height: 45%;
 	bottom: 0;
 	border-top: 2px dashed #77af7d;
 	border-bottom: 2px dashed #77af7d;
@@ -178,13 +178,13 @@ body {
 	margin: 0;
 	padding: 0;
 	width: 90%;
-	height: 70px;
+	height: 40px;
 	position: absolute;
 	bottom: 0;
 	left: 5%;
 	z-index: 98;
 	text-align: center;
-	font-size: 40px;
+	font-size: 29px;
 	font-family: 'Open Sans';
 	transition: background-color 0.25s ease-out;
 }
