@@ -57,8 +57,8 @@ body {
 #pro-pic {
 	border-width: 0px;
 	border-radius: 50%;
-	height: 25vh;
-	width: 25vh;
+	height: 20vh;
+	width: 20vh;
 }
 
 #greet {
@@ -95,16 +95,16 @@ body {
 #linkedin {
 	opacity: 0;
 	height: 100%;
-	padding-top: 40px;
-	padding-bottom: 30px;
+	padding-top: 20%;
 	transform: translateY(300%);
 	animation: slideFromBottom 1.00s ease-out 1.00s forwards;
 }
 
 #linkedin-logo {
 	position: relative;
-	top: 60px;
-	height: 25%;
+	border: 1px solid red;
+	margin: 0 auto;
+	height: 30%;
 	z-index: 0;
 }
 
@@ -118,7 +118,7 @@ body {
 #resume a {
 	color: #1d4991;
 	display: block;
-	font-size: 10em;
+	font-size: 15vh;
 	text-align: center;
 	text-decoration: none;
 }
@@ -127,13 +127,13 @@ body {
 	color: black;
 	margin-top: -30px;
 	font-family: 'Lato';
-	font-size: 40%;
+	font-size: 4vw;
 }
 
 #links {
 	position: absolute;
 	width: 90%;
-	height: 45%;
+	height: 35%;
 	bottom: 0;
 	border-top: 2px dashed #77af7d;
 	border-bottom: 2px dashed #77af7d;
@@ -294,7 +294,6 @@ body {
 
 @media (min-width: 767px) {
 	.project-row {
-
 	}
 }
 
@@ -324,9 +323,18 @@ body {
 		font-size: 8em;
 	}
 
+	#resume-text {
+		font-size: 40%;
+	}
+
+	#linkedin {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
 	#linkedin-logo {
 		position: relative;
-		top: 50px;
+		top: 40px;
 		height: 40%;
 		z-index: 0;
 	}
@@ -360,8 +368,6 @@ body {
 		position: relative;
 		height: 34vh;
 		box-shadow: 0px -2px 20px black;
-		/*border-top: 2px dashed #95db9c;*/
-		/*border-bottom: 2px dashed #95db9c;*/
 	}
 
 	#right-col {
