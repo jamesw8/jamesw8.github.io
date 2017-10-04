@@ -337,20 +337,20 @@ body {
 	}
 
 	#resume {
-		padding-top: 11px;
+		padding-top: 5px;
 	}
 
 	#resume a {
-		font-size: 15vh;
+		font-size: 11vh;
 	}
 
 	#resume-text {
-		font-size: 40%;
+		padding-top: 12px;
+		font-size: 30%;
 	}
 
 	#linkedin {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 0px;
 	}
 
 	#linkedin-logo {
@@ -362,7 +362,7 @@ body {
 
 	#links {
 		position: relative;
-		height: 100vh;
+		height: 50vh;
 		width: 90vw;
 		border-top: none;
 	}
@@ -397,21 +397,20 @@ body {
 
 	#left-col {
 		position: relative;
-		height: 33vh;
+		height: 20vh;
 		box-shadow: 0px -5px 20px -3px black;
 	}
 
 	#mid-col {
 		position: relative;
-		height: 34vh;
+		height: 20vh;
 		box-shadow: 0px -2px 20px black;
 	}
 
 	#right-col {
 		position: relative;
-		height: 33vh;
+		height: 20vh;
 		box-shadow: 0px -7px 20px -6px black;
-		border-bottom: 2px dashed #77af7d;
 	}
 
 	.navbar {
