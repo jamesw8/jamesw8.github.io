@@ -78,7 +78,6 @@ body {
 	height: 100%;
 	transform: translateY(300%);
 	animation: slideFromBottom 1.00s ease-out 1.00s forwards;
-	z-index: 3;
 }
 
 #octocat-logo {
@@ -89,10 +88,12 @@ body {
 }
 
 #github-logo {
+	position: relative;
 	height: 33%;
 }
 
 #linkedin {
+	position: relative;
 	opacity: 0;
 	height: 100%;
 	padding-top: 20%;
@@ -104,7 +105,6 @@ body {
 	position: relative;
 	margin: 0 auto;
 	height: 30%;
-	z-index: 0;
 }
 
 #resume {
@@ -148,7 +148,6 @@ body {
 	background-color: #6ac471;
 	height: 100%;
 	padding: 0;
-	z-index: 3;
 }
 
 #right-col {
@@ -171,7 +170,11 @@ body {
 	position: absolute;
 	top: 100%;
 	text-align: center;
-	z-index: 4;
+	/*z-index: 5;*/
+}
+
+#project-two, #project-three {
+	background-color: #c0d8c4;
 }
 
 #project-button {
@@ -203,6 +206,21 @@ body {
 .project {
 	margin: 0;
 	height: 50vh;
+}
+
+.project-header {
+	font-family: 'Lato', sans-serif;
+	font-size: 2em;
+	padding: 5vh;
+}
+
+.project-header a {
+	color: #333333;
+}
+
+.project-caption {
+	font-family: 'Merriweather', serif;
+	font-size: 2.5vh;
 }
 
 .project-col {
@@ -298,7 +316,7 @@ body {
 
 @media (max-width: 767px) {
 	#body {
-		height: 405vh;
+		height: 303vh;
 	}
 
 	#greet-div {
@@ -319,7 +337,7 @@ body {
 	}
 
 	#resume a {
-		font-size: 8em;
+		font-size: 15vh;
 	}
 
 	#resume-text {
@@ -350,7 +368,15 @@ body {
 		top: 0;
 		width: 90vw;
 		height: 100vh;
-		z-index: 6;
+		z-index: 100;
+	}
+
+	#project-three {
+		background-color: inherit;
+	}
+
+	#project-two, #project-four {
+		background-color: #c0d8c4;
 	}
 
 	#project-button {
@@ -374,7 +400,6 @@ body {
 		height: 33vh;
 		box-shadow: 0px -7px 20px -6px black;
 		border-bottom: 2px dashed #77af7d;
-		z-index: 3;
 	}
 
 	.navbar {
@@ -383,5 +408,16 @@ body {
 
 	.project {
 		width: 90vw;
+		height: 25vh;
+	}
+
+	.project-header {
+		font-size: 1.5em;
+		padding-top: 2vh;
+		padding-bottom: 1vh;
+	}
+
+	.project-caption {
+		font-size: 1.25em;
 	}
 }
