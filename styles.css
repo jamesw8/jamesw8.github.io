@@ -216,7 +216,7 @@ body {
 }
 
 .project-caption {
-	font-family: 'Merriweather', serif;
+	font-family: 'Open Sans', serif;
 	font-size: 2.5vh;
 }
 
@@ -318,7 +318,7 @@ body {
 
 @media (max-width: 767px) {
 	#body {
-		height: 272vh;
+		height: 265vh;
 	}
 
 	#greet-div {
