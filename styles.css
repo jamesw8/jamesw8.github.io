@@ -62,13 +62,14 @@ body {
 }
 
 #greet {
+	padding-top: 2vh;
+	font-size: 1.85vw;
 	text-align: center;
 	width: 60%;
 	animation: slideFromLeft 1.10s cubic-bezier(.46,.88,.51,.96);
 }
 
 #greet-div {
-	font-size: 1.25vw;
 	overflow-y: scroll;
 }
 
@@ -218,6 +219,8 @@ body {
 .project-caption {
 	font-family: 'Open Sans', serif;
 	font-size: 2.5vh;
+	padding-left: 3vw;
+	padding-right: 3vw;
 }
 
 .project-col {
@@ -310,10 +313,10 @@ body {
 	#project-title-xs {
 		display: none;
 	}
-
+/*
 	#linkedin {
 		padding-top: ;
-	}
+	}*/
 }
 
 @media (max-width: 767px) {
@@ -331,7 +334,7 @@ body {
 		text-align: left;
 		width: 85%;
 		height: 100%;
-		font-size: 1.25em;
+		font-size: 3.5vh;
 	}
 
 	#resume {
@@ -427,6 +430,6 @@ body {
 	}
 
 	.project-caption {
-		font-size: 0.9em;
+		font-size: ;
 	}
 }
