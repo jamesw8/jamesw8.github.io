@@ -96,14 +96,27 @@ body {
 	position: relative;
 	opacity: 0;
 	height: 100%;
-	padding-top: 10vh;
+	padding-top: 4vh;
 	animation: slideFromBottom .75s ease-out 1.00s forwards;
+}
+
+#linkedin a {
+	display: block;
+	text-decoration: none;
 }
 
 #linkedin-logo {
 	position: relative;
-	margin: 0 auto;
-	height: 30%;
+	height: 13vh;
+	margin-bottom: 5vh;
+}
+
+#linkedin-text {
+	color: black;
+	margin-top: -30px;
+	font-family: 'Lato';
+	font-size: 4vw;
+	text-align: center;
 }
 
 #resume {
@@ -356,11 +369,16 @@ body {
 
 	#linkedin-logo {
 		position: relative;
-		top: 40px;
-		height: 40%;
+		top: 30px;
+		height:9vh;
 		z-index: 0;
+		margin-bottom: 9vh;
 	}
 
+	#linkedin-text {
+		font-size: 21px;
+	}
+	
 	#links {
 		position: relative;
 		height: 50vh;
