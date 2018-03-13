@@ -65,12 +65,12 @@ body {
 	padding-top: 2vh;
 	font-size: 1.85vw;
 	text-align: center;
-	width: 60%;
+	width: 70%;
 	animation: slideFromLeft 1.10s cubic-bezier(.46,.88,.51,.96);
 }
 
 #greet-div {
-	overflow-y: scroll;
+	/*overflow-y: scroll;*/
 }
 
 #github {
